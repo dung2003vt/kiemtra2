@@ -6,15 +6,26 @@
 </head>
 <body>
 <script>
-    let string1 = prompt("Nhập chuỗi")
-    let string2 = prompt("Nhập chuỗi muốn kiểm tra")
-    string1.split()
-    string2.split()
-    for (let i = 0; i < string1.length; i++){
-        for (let j = 0; j < string2.length; j++){
-            if ()
-        }
-    }
+    let str2 = prompt("Nhập chuỗi")
+    let str1= prompt("Nhập chuỗi muốn kiểm tra")
+    let count = 0
+    str2.split()
+    str1.split()
+   function checkString(str2, str1) {
+       for (let i = 0; i < str2.length; i++) {
+           for (let j = 0; j < str1.length; j++) {
+               if (str1[j] === str2[i]) {
+                   count++
+               }
+           }
+       }
+       if (count === str1.length) {
+           return true
+       } else {
+           return false
+       }
+   }
+   console.log(checkString(str2, str1))
 </script>
 </body>
 </html>
